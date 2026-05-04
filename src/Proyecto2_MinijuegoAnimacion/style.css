@@ -1,0 +1,45 @@
+#game {
+    width: 500px;
+    height: 200px;
+    border: 1px;
+    /* To make it movable */
+    position: relative;
+    /* Hide things outside the box */
+    overflow: hidden;
+}
+
+#character {
+    width: 40px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 160px;
+    left: 20px;
+}
+
+#obstacle {
+    width: 20px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    top: 160px;
+    left: 480px;
+
+    /* Moves the obstacle infinitely */
+    animation: moveObstacle 1.5s infinite linear;
+}
+
+/* Left-Right movement animation */
+@keyframes moveObstacle {
+    0% { left: 480px;
+    }
+
+    /* Disappear to the left */
+    100% { left: -20px;
+    }
+}
+
+/* Jump animation with JavaScript */
+.jump {
+    animation: jumpAnimation;
+}
