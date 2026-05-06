@@ -41,5 +41,11 @@
 
 /* Jump animation with JavaScript */
 .jump {
-    animation: jumpAnimation;
+    animation: jumpAnimation 1s;
+}
+
+@keyframes jumpAnimation {
+    0% { top: 160px; } /* Still on the floor */
+    50% { top: 60px; } /* Highest part of jump */
+    100% { top: 160px; } /* Back to the ground */
 }
