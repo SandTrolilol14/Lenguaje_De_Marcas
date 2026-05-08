@@ -19,3 +19,8 @@ A simple side-scrolling jump game.
 * HTML
 * CSS
 * JavaScript
+
+## Self-Evaluation
+* **Most difficult part to implement:** Understanding the inverted Y-axis coordinate system in CSS to calculate the collision correctly.
+* **Extra features added:** The initial chess pieces were added to the chessboard, and the mini-game stops with a Game Over message when collides.
+* **Browser compatibility:** The code has been tested and works correctly on Google Chrome.
