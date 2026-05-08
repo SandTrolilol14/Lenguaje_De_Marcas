@@ -75,3 +75,94 @@ if (nota < 60) {
 }
 
 // 36
+const x = 8;
+const y = 15;
+const z = 12;
+if (x > y && x > z) {
+    console.log(`${x} es el mayor`)
+} else if (y > x && y > z) {
+    console.log(`${y} es el mayor`)
+} else if (z > x && z > y) {
+    console.log(`${z} es el mayor`)
+} else {
+    console.log(`No hay ningun mayor`)
+}
+
+// 37
+const usuario = admin;
+const password = js2024
+if (usuario === `admin` && password === `js2024`) {
+    console.log(`Acceso aceptado`)
+} else {
+    console.log(`Acceso denegado`)
+}
+
+// 38
+const normal = 9;
+const descuentoEdad = 5;
+const precioMiercoles = 4;
+const edad2 = 30;
+const diaSemana = miercoles
+if (diaSemana === `miercoles`) {
+    console.log(`Paga ${precioMiercoles}€`)
+} else if (edad2 > 14 || edad2 < 65) {
+    console.log(`Paga ${descuentoEdad}€`)
+} else {
+    console.log(`paga ${normal}€`)
+}
+
+// 39
+const a2 = 10;
+const b2 = 3;
+const operacion = modulo;
+let resultado;
+if (operacion === "suma") {
+    resultado = a + b;
+} else if (operacion === "resta") {
+    resultado = a - b;
+} else if (operacion === "multiplicacion") {
+    resultado = a * b;
+} else if (operacion === "division") {
+    resultado = a / b;
+} else if (operacion === "modulo") {
+    resultado = a % b;
+} else {
+    resultado = "Operación no reconocida";
+}
+
+console.log(`Resultado: ${resultado}`);
+
+// 40
+const peso = 70;
+const altura = 1.75;
+calculo = peso * (altura * altura);
+if (calculo < 18.5) {
+    console.log(`${calculo} = Bajo peso`)
+} else if (calculo >= 25) {
+    console.log(`${calculo} = Normal`)
+} else if (calculo >= 30) {
+    console.log(`${calculo} = Sobrepeso`)
+} else if (calculo >= 30) {
+    console.log(`${calculo} = Obesidad`)
+} else {
+    console.log(`No válido`)
+}
+
+// 41
+const stock = 5;
+const mensaje = stock > 0 ? "Disponible" : "Agotado";
+
+console.log(mensaje);
+
+// 42
+const n = 15;
+
+if (n % 3 === 0 && n % 5 === 0) {
+    console.log("Divisible por 3 y 5");
+} else if (n % 3 === 0) {
+    console.log("Solo por 3");
+} else if (n % 5 === 0) {
+    console.log("Solo por 5");
+} else {
+    console.log("Ninguno");
+}
